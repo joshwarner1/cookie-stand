@@ -73,7 +73,7 @@ let tokyo = {
     this.randomCustGenerator();
     console.log(this.customersPerHr);
     for(let i = 0; i < hours.length;i++)
-    { 
+    {
       let hourCookies = (Math.ceil(this.customersPerHr[i] * this.avgCookieSale));
       this.cookiesPerHr.push(hourCookies);
       this.totalCookiesInDay += hourCookies;
