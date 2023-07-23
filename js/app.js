@@ -2,6 +2,27 @@
 
 let hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
+const cookiesArray = [];
+console.log(cookiesArray);
+
+let cookieSection = documen.getElementById('cookie-stores');
+
+function renderAll(){
+  for(let i = 0; i < cookiesArray.length; i++){
+    cookiesArray[i].render();
+  }
+}
+
+function CookieStores(location, minCust, maxCust, avgCookieSale, customersPerHr, cookiesPerHr, totalCookiesInDay) {
+
+  this.location = location;
+  this.minCust = minCust;
+  this.maxCust = maxCust;
+  this.avgCookieSale = avgCookieSale;
+  this.customersPerHr = customersPerHr;
+  this.cookiesPerHr = cookiesPerHr;
+  this.totalCookiesInDay = totalCookiesInDay;
+}
 
 let seattle = {
   location: 'Seattle',
