@@ -5,7 +5,7 @@ let hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '
 const cookiesArray = [];
 console.log(cookiesArray);
 
-let cookieSection = documen.getElementById('cookie-stores');
+let cookieSection = document.getElementById('cookie-stores');
 
 function renderAll(){
   for(let i = 0; i < cookiesArray.length; i++){
