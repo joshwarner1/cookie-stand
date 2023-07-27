@@ -116,9 +116,11 @@ function tableFooter(){
     grandTotal += totalOfTotals;
   }
   let grandTotalCell = document.createElement('td');
+ 
   grandTotalCell.textContent = grandTotal;
   totalFooter.appendChild(grandTotalCell);
 }
+
 
 let seattle = new CookieStores('Seattle', 23, 65, 6.3);
 
@@ -140,4 +142,5 @@ locationRows();
 tableFooter(); 
 
 console.log('TOTAL', this.total);
+
 
