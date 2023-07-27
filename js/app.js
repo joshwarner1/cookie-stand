@@ -116,6 +116,7 @@ function tableFooter(){
     grandTotal += totalOfTotals;
   }
   let grandTotalCell = document.createElement('td');
+<<<<<<< HEAD
   // for( let i = 0; i < locationTotals.length; i++){
   //   let locationTotalCell = document.createElement('td');
   //   locationTotalCell.textContent = locationTotals[i];
@@ -153,7 +154,35 @@ console.log('TOTAL', this.total);
 // for(let j = 0; j < allStores.length; j++){
 //   this.totalCookiesInDay += allStores[i][j];
 // }
+=======
+  grandTotalCell.textContent = grandTotal;
+  totalFooter.appendChild(grandTotalCell);
+}
+>>>>>>> 299afc26fe39d953a71c2caeb098ea11da534717
 
+let seattle = new CookieStores('Seattle', 23, 65, 6.3);
 
+<<<<<<< HEAD
 
 //renderAll();
+=======
+let tokyo = new CookieStores('Tokyo', 3, 24, 1.2);
+
+let dubai = new CookieStores('Dubai', 11, 38, 3.7);
+
+let paris = new CookieStores('Paris', 20, 38, 2.3);
+
+let lima = new CookieStores('Lima', 2, 16, 4.6);
+
+allStores.push(seattle, tokyo, dubai, paris, lima );
+console.log(allStores);
+
+tableHeader();
+
+locationRows();
+
+tableFooter(); 
+
+console.log('TOTAL', this.total);
+
+>>>>>>> 299afc26fe39d953a71c2caeb098ea11da534717
