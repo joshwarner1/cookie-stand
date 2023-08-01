@@ -21,10 +21,10 @@ function locationSubmit(event){
   let locationName = form.locationName.value;
   let locationMinCust = parseInt(form.minCust.value);
   let locationMaxCust = parseInt(form.maxCust.value);
-  let locationAvgCookieSal = parseFloat(form.avgCookieSale.value);
-  console.log(locationName, locationMinCust, locationMaxCust, locationAvgCookieSal);
+  let locationAvgCookieSale = parseFloat(form.avgCookieSale.value);
+  console.log(locationName, locationMinCust, locationMaxCust, locationAvgCookieSale);
 
-  let newLocation = new CookieStores(locationName, locationMinCust, locationMaxCust, locationAvgCookieSal);
+  let newLocation = new CookieStores(locationName, locationMinCust, locationMaxCust, locationAvgCookieSale);
   document.getElementById('footer').
     textContent = null;
   newLocation.render();
