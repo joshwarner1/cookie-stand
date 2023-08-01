@@ -12,6 +12,31 @@ let grandTotal = [];
 
 let locationTotals = [];
 
+let newStoreForm = document.getElementById('cookie-form');
+newStoreForm.addEventListener('submit', locationSubmit);
+
+function locationSubmit(event){
+  event.preventDefault();
+  let form = event.target;
+  let locationName = form.locationName.value;
+  let locationMinCust = parseInt(form.minCust.value);
+  let locationMaxCust = parseInt(form.maxCust.value);
+  let locationAvgCookieSal = parseFloat(form.avgCookieSale.value);
+  console.log(locationName, locationMinCust, locationMaxCust, locationAvgCookieSal);
+
+  let newLocation = new CookieStores(locationName, locationMinCust, locationMaxCust, locationAvgCookieSal);
+  document.getElementById('footer').
+    textContent = null;
+  newLocation.render();
+  tableFooter();
+
+  form.name.value = null;
+  form.minCust.value = null;
+  form.maxCust.value = null;
+  form.avgCookieSale.value = null;
+}
+
+
 
 
 function tableHeader(){
